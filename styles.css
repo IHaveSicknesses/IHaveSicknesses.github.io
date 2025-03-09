@@ -1,11 +1,9 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body & Background */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #121212;
@@ -13,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
 .header {
     background-color: #1f1f1f;
     text-align: center;
@@ -27,7 +24,6 @@ body {
     letter-spacing: 2px;
 }
 
-/* Main Content */
 .main-content {
     max-width: 1200px;
     margin: 50px auto;
@@ -42,7 +38,6 @@ body {
     color: #00bcd4;
 }
 
-/* Tool List */
 .tools-list {
     display: flex;
     justify-content: center;
@@ -69,4 +64,42 @@ body {
 }
 
 .tool-icon {
-    width: 80
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.tool-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.redirect-btn {
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.redirect-btn:hover {
+    background-color: #018d97;
+}
+
+.footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: #bbb;
+}
