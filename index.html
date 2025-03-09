@@ -43,6 +43,16 @@
         <button class="database-btn" onclick="window.location.href='sites/databases.html';">Go to Databases</button>
     </main>
 
+    <script>
+  var password = "yourpassword";
+  var enteredPassword = prompt("Enter the password to access this site:");
+
+  if (enteredPassword !== password) {
+      window.location = "https://example.com";  // Redirect if wrong password
+  }
+    </script>
+
+
     <footer>
         <p>&copy; 2025 Ethical Hacking Hub</p>
     </footer>
