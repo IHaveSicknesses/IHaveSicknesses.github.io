@@ -1,64 +1,72 @@
-/* Basic Styles for the website */
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
-    color: white;
+/* Body & Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #1f1f1f;
     text-align: center;
+    padding: 50px 0;
+}
+
+.main-title {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 50px auto;
     padding: 20px;
+    text-align: center;
 }
 
-h1 {
-    margin: 0;
-}
-
-main {
-    padding: 20px;
-}
-
-h2 {
-    font-size: 24px;
+.section-title {
+    font-size: 2rem;
     margin-bottom: 20px;
+    font-weight: bold;
+    color: #00bcd4;
 }
 
-.games-list {
+/* Tool List */
+.tools-list {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
-.game-item {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+.tool-item {
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    padding: 20px;
     width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tool-item:hover {
+    transform: translateY(-10px);
+}
+
+.tool-link {
+    text-decoration: none;
+    color: inherit;
     text-align: center;
-    padding: 10px;
 }
 
-.game-item img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.game-item p {
-    font-size: 18px;
-    color: #333;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+.tool-icon {
+    width: 80
